@@ -22,7 +22,7 @@ const io = new Server(server);
 
 //handle all socket requests
 io.on('connection',(socket)=>{
-    console.log('new User', socket.id)
+    //console.log('new User', socket.id)
     socket.on('user-message',message=>{
         io.emit('message',message);
     })
