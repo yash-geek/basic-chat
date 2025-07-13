@@ -1,0 +1,74 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./chatbg.jpg');
+}
+
+
+
+
+#container {
+    font-size: larger;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    opacity: 0.5;
+    width: 100vw;
+    min-height: 80vh;
+    background-color: white;
+    flex: 8;
+    overflow: auto;
+    padding: 1rem 1.5rem;
+    list-style: none;
+
+}
+
+#messages li{
+    z-index: 10;
+    background-color: rgba(0,0,0,0.01);
+    width: fit-content;
+    padding: 0.1rem 1rem ;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10rem;
+}
+
+h1 {
+    color: whitesmoke;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+    flex: 1;
+}
+
+#textbar {
+    flex: 1;
+    display: flex;
+    padding: 0.3rem;
+
+}
+
+#message {
+    flex: 9;
+    padding-left: 2rem;
+}
+
+#sendBtn {
+    flex: 1;
+}
